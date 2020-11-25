@@ -22,6 +22,7 @@ const init = () => {
   scene.add(mesh);
 
   renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setClearColor( 0xffffff, 1 );
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 };
